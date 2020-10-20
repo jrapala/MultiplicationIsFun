@@ -25,7 +25,7 @@ struct ChooseRoundsView: View {
                         numberOfRounds = rounds[option]
                     }) {
                         ZStack {
-                            Color(#colorLiteral(red: 0.8951529344, green: 0.4050776695, blue: 0.6432097152, alpha: 1))
+                            Color(numberOfRounds == rounds[option] ? #colorLiteral(red: 0.8951529344, green: 0.4050776695, blue: 0.6432097152, alpha: 1) : #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))
                                 .frame(width: 70, height: 70, alignment: .center)
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
                                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
@@ -48,7 +48,7 @@ struct ChooseRoundsView_Previews: PreviewProvider {
         ZStack {
             Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
-            ChooseRoundsView(numberOfRounds: .constant("5"))
+            ChooseRoundsView(numberOfRounds: .constant(""))
         }
     }
 }

@@ -11,7 +11,7 @@ let screen = UIScreen.main.bounds
 
 struct ContentView: View {
     @State private var tablesPicked: [Int] = []
-    @State private var numberOfRounds = "5"
+    @State private var numberOfRounds = ""
     @State private var showTableOptions = true
     @State private var showRoundOptions = false
     @State private var showGameSetup = true
